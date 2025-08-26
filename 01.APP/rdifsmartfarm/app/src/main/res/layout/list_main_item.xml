@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:contentPadding="10dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="ID:" />
+
+                    <TextView
+                        android:id="@+id/rfidText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="wait" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:gravity="center"
+                        android:text="时间日期:" />
+
+                    <TextView
+                        android:id="@+id/dateTimeText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="wait" />
+                </LinearLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow android:layout_margin="5dp">
+
+                        <TextView android:text="体温" />
+
+                        <TextView
+                            android:id="@+id/tempVText"
+                            android:layout_marginStart="10dp"
+                            android:text="wait" />
+
+                        <TextView android:text="℃" />
+
+                        <View
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:layout_marginStart="10dp"
+                            android:text="心率" />
+
+                        <TextView
+                            android:id="@+id/heartText"
+                            android:layout_marginStart="10dp"
+
+                            android:text="wait" />
+
+                        <TextView android:text="/minute" />
+
+                        <View
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+                    </TableRow>
+
+                    <TableRow android:layout_margin="5dp">
+
+                        <TextView android:text="环境温度" />
+
+                        <TextView
+                            android:id="@+id/tempText"
+                            android:layout_marginStart="10dp"
+                            android:text="wait" />
+
+                        <TextView android:text="℃" />
+
+                        <View
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:layout_marginStart="10dp"
+                            android:text="环境湿度" />
+
+                        <TextView
+                            android:id="@+id/humiText"
+                            android:layout_marginStart="10dp"
+
+                            android:text="wait" />
+
+                        <TextView android:text="%" />
+
+                        <View
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/deleteBtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right|top"
+                android:src="@mipmap/delete" />
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</FrameLayout>

@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.intelligentsmokealarmsystem.HomeFragment">
+    <item
+        android:id="@+id/debugView"
+        android:orderInCategory="100"
+        android:title="@string/setDebug"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/loginView"
+        android:orderInCategory="100"
+        android:title="@string/login"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/outView"
+        android:orderInCategory="100"
+        android:title="@string/out"
+        app:showAsAction="never" />
+</menu>
